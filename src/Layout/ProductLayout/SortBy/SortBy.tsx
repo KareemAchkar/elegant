@@ -59,37 +59,44 @@ export const SortBy: React.FC<Props> = ({ shopProducts, setShopProducts }) => {
         </div>
         {sortToggler && (
           <ul>
-            <label>
+            <label className="checkbox-label">
               <input
                 type="checkbox"
                 value="Reset Sorting"
                 checked={selectedOption === ''}
                 onChange={resetSorting}
+                className="checkbox-input"
               />
               Suggested
             </label>
 
-            <label>
+            <label className="checkbox-label">
               <input
                 type="checkbox"
                 value="Lowest Price"
                 checked={selectedOption === "Lowest Price"}
                 onChange={sortLowestPrice}
+                className="checkbox-input"
               />
               Lowest Price
             </label>
-            <label>
+
+            <label className="checkbox-label">
               <input
                 type="checkbox"
                 value="Highest Price"
                 checked={selectedOption === "Highest Price"}
                 onChange={sortHighestPrice}
+                className="checkbox-input"
               />
               Highest Price
             </label>
           </ul>
         )}
+
       </div>
+
     </>
+
   );
 };

@@ -3,7 +3,6 @@ import debounce from 'lodash.debounce'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons"
 import { ProductsContext } from "../../../context/ProductContext"
-import ProductsFromServer from './../../../services/BackUpData.json';
 import { useLocation } from "react-router-dom"
 
 export const Category = () => {
@@ -12,7 +11,7 @@ export const Category = () => {
   const [categoryQuery, setCategoryQuery] = useState('')
   const [debounceQuery, setDebounceQuery] = useState('')
 
-  
+
   const location = useLocation()
   const manLocation = location.pathname.includes('man')
   const womanLocation = location.pathname.includes('woman')
@@ -100,11 +99,14 @@ export const Category = () => {
             />
 
             {filteredQuery.map((categ) => (
-              <label key={categ}>
+              <label key={categ}
+                className="checkbox-label"
+              >
                 <input type="checkbox"
                   value={categ}
                   checked={selectedCategory.includes(categ)}
                   onChange={() => onCategorySelect(categ)}
+                  className="checkbox-input"
                 />
                 {categ}
               </label>

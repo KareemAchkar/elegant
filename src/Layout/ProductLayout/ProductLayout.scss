@@ -49,6 +49,7 @@
 .text-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .productLayout {
@@ -59,10 +60,8 @@
 }
 
 span {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: normal;
-  color: #000000b3;
-  font-size: 1.5rem;
+  font-family: "Mulish", sans-serif;
+  font-size: 1.4rem;
   cursor: pointer;
   margin-top: 2%;
 }
@@ -73,11 +72,27 @@ span {
 }
 
 .sidebar-container {
-  min-width: 13%;
+  width: 14%;
   background-color: rgba(128, 128, 128, 0.076);
   position: sticky;
   top: 0;
   height: 100vh;
+  transition: width 0.3s ease;
+}
+
+.side-container input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+}
+
+/* Optional: Style the label for better aesthetics */
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Mulish", sans-serif;
+  color: rgb(0, 0, 0);
+  margin-bottom: 3px;
 }
 
 .side-page- p {
@@ -101,19 +116,23 @@ span {
   gap: 10px;
 
   .product-salesprice {
+    font-family: "Mulish", sans-serif;
     color: #c51e28;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
 
     &.cart-basket {
-      color: rgba(0, 0, 0, 0.709);
-      font-size: 1.4rem;
+      color: #22242a;
+      font-weight: 400;
+      font-size: 1.3rem;
     }
   }
 
   .product-salesprice-value {
+    font-family: "Mullish", sans-serif;
     font-weight: 800;
-    color: #d31320eb;
-    font-size: 1.4rem;
+    color: #c51e28;
+    font-size: 1.5rem;
 
     &.cart-value {
       color: rgba(0, 0, 0, 0.85);
@@ -150,13 +169,21 @@ span {
 }
 
 .side-container label {
-  display: block;
+  display: flex; /* Align the label content horizontally */
+  align-items: center; /* Align the label content vertically */
   cursor: pointer;
 }
 
 .side-container input[type="checkbox"] {
   margin: 0;
   margin-right: 6px;
+}
+.checkbox-label {
+  display: block;
+}
+
+.checkbox-input {
+  filter: grayscale(100%) !important;
 }
 
 input[type="text"] {
@@ -285,7 +312,8 @@ input[type="text"]::placeholder {
 }
 
 .product-title {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Mulish", sans-serif;
+  color: #22242a;
   margin: 0;
   font-size: 1.2rem;
   white-space: nowrap;
@@ -300,13 +328,13 @@ input[type="text"]::placeholder {
 .product-price,
 .product-salesprice,
 .product-salesprice-value {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Mulish", sans-serif;
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .product-title {
-  color: #22242ab5;
+  color: #22242a;
 
   &.item {
     font-size: 1.6rem;
@@ -314,11 +342,17 @@ input[type="text"]::placeholder {
 }
 
 .product-price {
-  font-size: 1.4rem;
-  color: #22242ac9;
-
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #212529;
   &.cart-price {
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.82);
+    font-family: "Mullish", sans-serif;
+    font-weight: 800;
+    color: #212529;
+    font-size: 1.5rem;
+  }
+
+  &.shop {
+    font-size: 1.3rem;
   }
 }

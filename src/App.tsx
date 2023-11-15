@@ -26,7 +26,6 @@ export const App = () => {
       setFavoritedProducts([...favoritedProducts, ...storedFavoriteItem]);
     }
 
-
   }, [storedFavoriteItem]);
 
   useEffect(() => {

@@ -68,7 +68,7 @@ export const ProductInfo: React.FC<Props> = ({ foundProduct }) => {
                 classname={'product-fav-icon my-fav'}
               />
             </div>
-            <p className="product-price">{foundProduct.price}$</p>
+            <p className="product-price shop">{foundProduct.price}$</p>
             <div className="product-salesprice-container">
               <p className="product-salesprice">Basket Amount</p>
               <p className="product-salesprice-value">${foundProduct.saleprice}</p>

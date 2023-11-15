@@ -98,12 +98,13 @@ export const Colour = () => {
             />
 
             {filteredColourQuery.map((colour) => (
-              <label>
+              <label key={colour} className="checkbox-label">
                 <input
                   type="checkbox"
                   value={colour}
                   checked={selectedColour.includes(colour)}
                   onChange={() => onColourSelected(colour)}
+                  className="checkbox-input"
                 />
                 {colour}
               </label>
