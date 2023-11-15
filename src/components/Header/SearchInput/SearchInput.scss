@@ -1,0 +1,28 @@
+.search-container {
+  position: relative;
+  width: 380px;
+
+  input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #000000b7;
+    border-radius: 1px;
+    background-image: url("../../../assets/images/search-icon-logo.png");
+    background-size: 20px 20px;
+    background-position: 5% center;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    color: #000000ba;
+
+    &:focus {
+      outline: none;
+      border: transparent;
+    }
+
+    &::placeholder {
+      color: #999;
+      font-style: italic;
+    }
+  }
+}
