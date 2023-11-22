@@ -1,0 +1,49 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.08);
+  width: 100%;
+  margin-top: 4%;
+  opacity: 0;
+  animation: fadeIn 0.2s 0.7s forwards;
+
+  .footer-limiter {
+    display: flex;
+    justify-content: center;
+    gap: 6%;
+    width: 50%;
+    padding: 4% 4%;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 14px;
+  }
+
+  h2 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #000000c4;
+  }
+
+  h3 {
+    margin: 0;
+    font-family: "Mulish", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #000000c4;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+  .footer {
+    display: none;
+    .footer-limiter {
+      width: 10%;
+      padding: 4% 2%;
+    }
+  }
+}

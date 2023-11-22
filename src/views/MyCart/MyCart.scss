@@ -1,0 +1,142 @@
+.my-cart-title {
+  font-family: "Mulish", "open Sans", sans-serif;
+  font-size: 2.4rem;
+  color: rgba(0, 0, 0, 0.944);
+  margin-left: 260px;
+  margin-right: 260px;
+  margin-bottom: 0;
+}
+
+.mycart-container {
+  display: flex;
+  position: relative;
+
+  .mycart-counter {
+    position: absolute;
+    top: -10px;
+    right: -13px;
+    background-color: rgba(0, 0, 0, 0.787);
+    color: white;
+    text-align: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    line-height: 16px;
+  }
+}
+
+.product-quantity-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  .product-quantity-label {
+    font-family: "Mulish", "open Sans", sans-serif;
+    font-size: 1.2rem;
+  }
+
+  .product-quantity {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+  }
+}
+
+.product-shopping-container {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+  padding: 0 30px;
+
+  .product-shopping-amount-container {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+  }
+
+  .product-shopping-amount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .product-shopping-title {
+    font-family: "Mulish", "open Sans", sans-serif;
+    font-size: 1.6rem;
+    margin: 0;
+  }
+
+  .product-shopping-total {
+    font-family: "Mulish", "open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin: 0;
+  }
+
+  .product-shopping-button {
+    margin-top: 30px;
+    background-color: #0d0e0ee4;
+    color: #ffffffef;
+    border: 0;
+    padding: 13px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s background-color;
+    width: 100%;
+
+    &:hover {
+      background-color: #fff;
+      border: 1px solid black;
+      color: #0d0e0e;
+    }
+
+    &.disabled {
+      background-color: #0d0e0ea2;
+      cursor: not-allowed;
+
+      &:hover {
+        background-color: 0d0e0ea2;
+        border: none;
+        color: #ffffff;
+      }
+    }
+  }
+}
+.product-removeItem {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .my-cart-title {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .mycart-container {
+    .mycart-counter {
+      top: -5px;
+      right: -8px;
+    }
+  }
+
+  .product-shopping-container {
+    width: 100%;
+    padding: 0 15px;
+
+    .product-shopping-amount-container {
+      padding: 20px;
+    }
+
+    .product-shopping-title {
+      font-size: 1.4rem;
+    }
+
+    .product-shopping-total {
+      font-size: 1.6rem;
+    }
+
+    .product-shopping-button {
+      margin-top: 20px;
+      padding: 10px;
+    }
+  }
+}

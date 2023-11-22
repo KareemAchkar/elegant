@@ -1,0 +1,147 @@
+.product-payment-title {
+  text-align: center;
+  font-family: "Mulish", "open Sans", sans-serif;
+  font-size: 2.7rem;
+  margin-bottom: 30px;
+}
+
+.payment-form-container {
+  display: flex;
+  background-color: #faf9f8;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+
+  .payment-form {
+    background-color: #fff;
+    width: 35%;
+    padding: 16px 24px;
+
+    .form-title,
+    .form-title,
+    .form-email,
+    .form-email-address,
+    .form-label,
+    .form-orderprice {
+      display: block;
+      font-family: "Mulish", "open Sans", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .form-title {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+
+    .form-email,
+    .form-email-address {
+      font-size: 1.3rem;
+    }
+
+    .personalname-container {
+      display: flex;
+      width: 100%;
+      gap: 30px;
+
+      .form-label {
+        margin-top: 17px;
+        font-size: 1.3rem;
+        width: 100%;
+      }
+
+      .form-input {
+        display: block;
+        margin-top: 5px;
+        padding: 0 10px;
+        box-sizing: border-box;
+        height: 43px;
+        width: 100%;
+        border: 1px solid hsla(0, 0%, 0%, 0.184);
+
+        &:focus {
+          outline: none;
+          border: 1px solid #00000071;
+        }
+      }
+    }
+  }
+
+  .payment-sidebar {
+    width: 17%;
+    height: 460px;
+    padding: 16px 24px;
+    background-color: #fff;
+
+    .orderprice-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      .form-orderprice,
+      .form-orderprice-value,
+      .form-totalprice,
+      .form-totalprice-value {
+        display: block;
+        font-family: "Mulish", "open Sans", sans-serif;
+        margin: 0;
+        padding: 0;
+        font-size: 1.3rem;
+        color: #5b5858;
+      }
+      &:nth-of-type(3) {
+        border-bottom: 1px solid black;
+        padding-bottom: 20px;
+      }
+      .form-totalprice,
+      .form-totalprice-value {
+        font-size: 1.5rem;
+        color: black;
+        font-weight: bold;
+      }
+
+      .conditions-container {
+        display: block;
+        margin: 0;
+      }
+    }
+    .conditions-label,
+    .customerservice-text {
+      display: block;
+      font-family: "Mulish", "open Sans", sans-serif;
+      margin: 0;
+      padding: 0;
+      font-size: 1.3rem;
+      color: black;
+      margin-top: 10px;
+      margin-bottom: 15px;
+
+      &:nth-of-type(2) {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.421);
+        padding-bottom: 20px;
+      }
+
+      &.doneIsOff {
+      }
+    }
+
+    .conditions-checkbox {
+      margin-right: 3px;
+      vertical-align: -1px;
+      filter: grayscale(100%) !important;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .payment-form-container {
+    flex-direction: column;
+    width: 100%; /* Adjusted width for smaller screens */
+
+    .payment-form {
+      width: 100%;
+    }
+    .payment-sidebar {
+      width: 100%; /* Adjusted width for smaller screens */
+    }
+  }
+}

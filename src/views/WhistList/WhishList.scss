@@ -1,0 +1,66 @@
+.e-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.product-favorite-title {
+  font-family: "Mulish", "open Sans", sans-serif;
+  font-size: 2.2rem;
+  padding-left: 30%;
+  margin: 15px;
+  margin-bottom: 30px;
+
+  &.middle {
+    padding-left: 0;
+  }
+}
+
+.product-favorite-warning {
+  font-family: "Mulish", "open Sans", sans-serif;
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.736);
+  font-weight: bold;
+  background-color: rgba(39, 31, 20, 0.189);
+  padding: 20px;
+  padding-left: 20%;
+}
+
+.favHeart {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .product-favorite-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    gap: 20px;
+    height: 70vh; 
+  }
+
+  .e-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+    height: auto; /* Remove fixed height */
+  }
+
+  .product-favorite-title {
+    margin: 15px 0; /* Adjust margin as needed */
+    font-size: 1.8rem;
+    text-align: center; /* Center the text */
+    padding-left: 0; /* Remove left padding */
+  }
+
+  .product-favorite-warning {
+    padding-left: 8%;
+  }
+}

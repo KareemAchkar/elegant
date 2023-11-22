@@ -1,0 +1,132 @@
+.Button,
+.product-addButton,
+.loading-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 41px;
+}
+
+.Button {
+  margin: 20px auto;
+  padding: 10px 20px;
+  width: 300px;
+  background-color: transparent;
+  font-family: "Mulish", sans-serif;
+  border: 1px solid #01010152;
+  border-radius: 2px;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+
+  &:hover {
+    background-color: #0d0e0eeb;
+    color: #ffffffdc;
+  }
+
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+
+  &.shopnow,
+  &.save,
+  &.done {
+    background-color: #0d0e0ee4;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: normal;
+    padding: 25px;
+    width: 370px;
+    &:hover {
+      background-color: #fff;
+      color: #000;
+      font-weight: bold;
+    }
+  }
+  &.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &.disabled:hover {
+      background-color: #0d0e0ee4;
+      color: #fff;
+      font-weight: inherit;
+    }
+  }
+}
+.product-addButton.cart,
+.product-addButton.cart a {
+  text-decoration: none;
+}
+
+.product-addButton {
+  margin-top: 30px;
+  background-color: #0d0e0ee4;
+  color: #ffffff;
+  border: 0;
+  cursor: pointer;
+  transition: 0.3s background-color;
+  width: 90%;
+
+  &:hover {
+    background-color: #fff;
+    border: 1px solid black;
+    color: #0d0e0e;
+  }
+
+  &.cart {
+    margin-top: 10px;
+    width: 93%;
+  }
+
+  &.disabled {
+    background-color: #0d0e0ea2;
+    cursor: not-allowed;
+
+    &:hover {
+      background-color: 0d0e0ea2;
+      border: none;
+      color: #ffffff;
+    }
+  }
+}
+
+.loading-button {
+  height: 100%;
+  width: 20px;
+  overflow: hidden;
+}
+
+.add-container {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  justify-content: center;
+  &.animate {
+    animation: slideFromTop 0.5s ease forwards;
+  }
+}
+
+@keyframes slideFromTop {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .product-addButton {
+    &.cart {
+      margin-top: 10px;
+      width: 100%;
+    }
+  }
+
+  .Button {
+    &.done {
+      padding: 25px;
+      width: 100%;
+    }
+  }
+}

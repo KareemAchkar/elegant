@@ -1,0 +1,90 @@
+/* SignIn.scss */
+.sign-in-container {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  width: 400px;
+  text-align: center;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+
+    h1 {
+      font-size: 2rem;
+      font-family: "Mulish", sans-serif;
+      margin-bottom: 20px;
+      color: #22242a;
+    }
+
+    input {
+      width: 100%;
+      height: 45px;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+      transition: font-size 0.3s;
+
+      &::placeholder {
+        font-family: "Mulish", sans-serif;
+        font-size: 1.3rem;
+      }
+
+      &:focus {
+        font-size: 1.3rem;
+      }
+    }
+
+    button {
+      width: 100%;
+      padding: 15px 0;
+      font-size: 1.2rem;
+      background-color: #22242a;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      outline: none;
+
+      &:hover {
+        background-color: #1c1e22;
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      margin-top: 20px;
+      color: #555;
+    }
+
+    .signOut {
+      font-family: "Mulish", sans-serif;
+      color: #22242a;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+
+    .discount-text {
+      font-family: "Mulish", sans-serif;
+      cursor: pointer;
+      font-weight: bold;
+      color: #d31c25d1;
+      font-size: 1.2rem;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .sign-in-container {
+    position: absolute;
+    top: 33%;
+    width: 95%;
+  }
+}
