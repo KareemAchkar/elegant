@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/elegant/static/css/main.269c074a.css",
-    "main.js": "/elegant/static/js/main.081c8fdc.js",
+    "main.js": "/elegant/static/js/main.aca23dec.js",
     "static/js/787.6e179f6c.chunk.js": "/elegant/static/js/787.6e179f6c.chunk.js",
     "static/media/childrenVideo.mp4": "/elegant/static/media/childrenVideo.5e8096a8c7df3b992ebb.mp4",
     "static/media/manVideo.mp4": "/elegant/static/media/manVideo.eaecadb805c066e328c3.mp4",
@@ -40,11 +40,11 @@
     "static/media/CoolveticaRg-Regular.woff2": "/elegant/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/elegant/index.html",
     "main.269c074a.css.map": "/elegant/static/css/main.269c074a.css.map",
-    "main.081c8fdc.js.map": "/elegant/static/js/main.081c8fdc.js.map",
+    "main.aca23dec.js.map": "/elegant/static/js/main.aca23dec.js.map",
     "787.6e179f6c.chunk.js.map": "/elegant/static/js/787.6e179f6c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.269c074a.css",
-    "static/js/main.081c8fdc.js"
+    "static/js/main.aca23dec.js"
   ]
 }
