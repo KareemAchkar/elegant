@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import { App } from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 import 'typeface-roboto';
 import { ProductsProvider } from './context/ProductContext';
 
@@ -14,11 +14,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <ProductsProvider>
         <App />
       </ProductsProvider>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
 
