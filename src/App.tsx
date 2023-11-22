@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import './App.scss';
-import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { Layout } from './Layout/Layout';
 import { Woman } from './views/Woman/Woman';
 import { Man } from './views/Man/Man';
@@ -20,7 +20,7 @@ import { Checkout } from './views/Checkout/Checkout';
 import { SignUp } from './views/SignUp/SignUp';
 
 export const App = () => {
-  const { favoritedProducts, setFavoritedProducts, storedFavoriteItem, setMyCartCounter, setAddedProducts, storedAddeditems, quantities, setQuantities, authUser } = useContext(ProductsContext)
+  const { favoritedProducts, setFavoritedProducts, storedFavoriteItem, setMyCartCounter, setAddedProducts, storedAddeditems, setQuantities } = useContext(ProductsContext)
   const location = useLocation();
 
   useEffect(() => {
@@ -28,10 +28,12 @@ export const App = () => {
       setFavoritedProducts([...favoritedProducts, ...storedFavoriteItem]);
     }
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [storedFavoriteItem]);
 
   useEffect(() => {
     setAddedProducts(storedAddeditems);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [storedAddeditems]);
 
   useEffect(() => {
@@ -39,6 +41,7 @@ export const App = () => {
     if (savedCartCounter) {
       setMyCartCounter(parseInt(savedCartCounter, 10));
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -71,7 +74,7 @@ export const App = () => {
             <Route path='child' element={<ChildProducts />} />
             <Route path='baby' element={<BabyProducts />} />
           </Route>
-          
+
           <Route path='product-page/:productId' element={<ProductItem />} />
 
           <Route path='checkout' element={<Checkout />}

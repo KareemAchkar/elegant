@@ -29,7 +29,7 @@ export const ProductItem = () => {
 
   useEffect(() => {
     disableContainer()
-  }, [])
+  }, [disableContainer])
 
   return (
     <>

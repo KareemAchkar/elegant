@@ -69,6 +69,7 @@ export const Category = () => {
 
   ; useEffect(() => {
     setSelectedCategory([])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
 

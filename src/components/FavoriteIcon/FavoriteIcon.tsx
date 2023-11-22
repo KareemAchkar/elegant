@@ -37,7 +37,7 @@ export const FavoriteIcon: React.FC<Props> = ({ product, classname }) => {
       setIsFavSelected(true);
     }
 
-  }, []);
+  }, [product.id]);
 
   console.log('here', favoritedProducts)
 

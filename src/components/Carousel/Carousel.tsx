@@ -20,6 +20,7 @@ export const MyCarousel: React.FC<MyCarouselProps> = ({ carouselProducts, path }
 
   useEffect(() => {
     disableContainer()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   if (!carouselProducts || carouselProducts.length === 0) {

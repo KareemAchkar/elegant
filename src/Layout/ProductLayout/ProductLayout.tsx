@@ -64,6 +64,7 @@ export const ProductLayout = () => {
 
   useEffect(() => {
     disableContainer();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

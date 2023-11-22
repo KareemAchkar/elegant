@@ -15,7 +15,7 @@ interface CountryOption {
 }
 
 export const Checkout = () => {
-  const { addedProducts, setAddedProducts, quantities, setIsPaymentDone, myCartCounter, setMyCartCounter } = useContext(ProductsContext);
+  const { addedProducts, setAddedProducts, quantities, setIsPaymentDone, setMyCartCounter } = useContext(ProductsContext);
   const [selectedCountry, setSelectedCountry] = useState<CountryOption | null>(null);
   const [phoneCode, setPhoneCode] = useState<string>('');
   const [name, setName] = useState('');
